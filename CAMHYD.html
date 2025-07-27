@@ -1,0 +1,85 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  
+  <head>
+    
+      <meta charset="utf-8">
+      <title>Bokeh Plot</title>
+      
+      
+        
+          
+        
+        
+          
+        <script type="text/javascript" src="https://cdn.bokeh.org/bokeh/release/bokeh-2.1.1.min.js" integrity="sha384-kLr4fYcqcSpbuI95brIH3vnnYCquzzSxHPU6XGQCIkQRGJwhg0StNbj1eegrHs12" crossorigin="anonymous"></script>
+        <script type="text/javascript">
+            Bokeh.set_log_level("info");
+        </script>
+        
+      
+      
+    
+  </head>
+  
+  
+  <body>
+    
+      
+        
+          
+          
+            
+              <div class="bk-root" id="e61bf0ff-cb19-420e-b7a1-758894c3db39" data-root-id="1278"></div>
+            
+          
+        
+      
+      
+        <script type="application/json" id="1411">
+          {"95da8a0c-67df-4540-bbf5-a32b4d790099":{"roots":{"references":[{"attributes":{},"id":"1301","type":"HelpTool"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"pink"},"line_alpha":{"value":0.1},"line_color":{"value":"pink"},"top":{"field":"top"},"width":{"value":0.6},"x":{"field":"x"}},"id":"1312","type":"VBar"},{"attributes":{},"id":"1299","type":"SaveTool"},{"attributes":{"overlay":{"id":"1302"}},"id":"1298","type":"BoxZoomTool"},{"attributes":{"data_source":{"id":"1310"},"glyph":{"id":"1311"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"1312"},"selection_glyph":null,"view":{"id":"1314"}},"id":"1313","type":"GlyphRenderer"},{"attributes":{},"id":"1300","type":"ResetTool"},{"attributes":{},"id":"1316","type":"CategoricalTickFormatter"},{"attributes":{},"id":"1318","type":"BasicTickFormatter"},{"attributes":{},"id":"1290","type":"CategoricalTicker"},{"attributes":{},"id":"1321","type":"Selection"},{"attributes":{"source":{"id":"1310"}},"id":"1314","type":"CDSView"},{"attributes":{"axis_label":"YEAR","formatter":{"id":"1316"},"ticker":{"id":"1290"}},"id":"1289","type":"CategoricalAxis"},{"attributes":{"factors":["2010","2011","2012","2013","2014","2015","2016","2017","2018","2019","2020"]},"id":"1281","type":"FactorRange"},{"attributes":{},"id":"1320","type":"UnionRenderers"},{"attributes":{},"id":"1283","type":"DataRange1d"},{"attributes":{"below":[{"id":"1289"}],"center":[{"id":"1291"},{"id":"1295"}],"left":[{"id":"1292"}],"renderers":[{"id":"1313"}],"title":{"id":"1279"},"toolbar":{"id":"1303"},"x_range":{"id":"1281"},"x_scale":{"id":"1285"},"y_range":{"id":"1283"},"y_scale":{"id":"1287"}},"id":"1278","subtype":"Figure","type":"Plot"},{"attributes":{"text":"CAMERAS IN HYDERABAD"},"id":"1279","type":"Title"},{"attributes":{"data":{"top":[13588,15489,17125,17549,18654,20654,22695,23750,25673,275528,300000],"x":["2010","2011","2012","2013","2014","2015","2016","2017","2018","2019","2020"]},"selected":{"id":"1321"},"selection_policy":{"id":"1320"}},"id":"1310","type":"ColumnDataSource"},{"attributes":{},"id":"1287","type":"LinearScale"},{"attributes":{"axis_label":"NUMBER OF CAMERAS","formatter":{"id":"1318"},"ticker":{"id":"1293"}},"id":"1292","type":"LinearAxis"},{"attributes":{},"id":"1293","type":"BasicTicker"},{"attributes":{},"id":"1285","type":"CategoricalScale"},{"attributes":{"axis":{"id":"1289"},"ticker":null},"id":"1291","type":"Grid"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_multi":null,"active_scroll":"auto","active_tap":"auto","tools":[{"id":"1296"},{"id":"1297"},{"id":"1298"},{"id":"1299"},{"id":"1300"},{"id":"1301"}]},"id":"1303","type":"Toolbar"},{"attributes":{"axis":{"id":"1292"},"dimension":1,"ticker":null},"id":"1295","type":"Grid"},{"attributes":{"fill_color":{"value":"pink"},"line_color":{"value":"pink"},"top":{"field":"top"},"width":{"value":0.6},"x":{"field":"x"}},"id":"1311","type":"VBar"},{"attributes":{},"id":"1297","type":"WheelZoomTool"},{"attributes":{"bottom_units":"screen","fill_alpha":0.5,"fill_color":"lightgrey","left_units":"screen","level":"overlay","line_alpha":1.0,"line_color":"black","line_dash":[4,4],"line_width":2,"right_units":"screen","top_units":"screen"},"id":"1302","type":"BoxAnnotation"},{"attributes":{},"id":"1296","type":"PanTool"}],"root_ids":["1278"]},"title":"Bokeh Application","version":"2.1.1"}}
+        </script>
+        <script type="text/javascript">
+          (function() {
+            var fn = function() {
+              Bokeh.safely(function() {
+                (function(root) {
+                  function embed_document(root) {
+                    
+                  var docs_json = document.getElementById('1411').textContent;
+                  var render_items = [{"docid":"95da8a0c-67df-4540-bbf5-a32b4d790099","root_ids":["1278"],"roots":{"1278":"e61bf0ff-cb19-420e-b7a1-758894c3db39"}}];
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                
+                  }
+                  if (root.Bokeh !== undefined) {
+                    embed_document(root);
+                  } else {
+                    var attempts = 0;
+                    var timer = setInterval(function(root) {
+                      if (root.Bokeh !== undefined) {
+                        clearInterval(timer);
+                        embed_document(root);
+                      } else {
+                        attempts++;
+                        if (attempts > 100) {
+                          clearInterval(timer);
+                          console.log("Bokeh: ERROR: Unable to run BokehJS code because BokehJS library is missing");
+                        }
+                      }
+                    }, 10, root)
+                  }
+                })(window);
+              });
+            };
+            if (document.readyState != "loading") fn();
+            else document.addEventListener("DOMContentLoaded", fn);
+          })();
+        </script>
+    
+  </body>
+  
+</html>

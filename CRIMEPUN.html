@@ -1,0 +1,85 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  
+  <head>
+    
+      <meta charset="utf-8">
+      <title>Bokeh Plot</title>
+      
+      
+        
+          
+        
+        
+          
+        <script type="text/javascript" src="https://cdn.bokeh.org/bokeh/release/bokeh-2.1.1.min.js" integrity="sha384-kLr4fYcqcSpbuI95brIH3vnnYCquzzSxHPU6XGQCIkQRGJwhg0StNbj1eegrHs12" crossorigin="anonymous"></script>
+        <script type="text/javascript">
+            Bokeh.set_log_level("info");
+        </script>
+        
+      
+      
+    
+  </head>
+  
+  
+  <body>
+    
+      
+        
+          
+          
+            
+              <div class="bk-root" id="7478a664-0578-4970-9276-4c90bda90d1c" data-root-id="1269"></div>
+            
+          
+        
+      
+      
+        <script type="application/json" id="1402">
+          {"94406089-a4a1-43b7-aa9d-082ada4cb3a2":{"roots":{"references":[{"attributes":{},"id":"1278","type":"LinearScale"},{"attributes":{},"id":"1291","type":"ResetTool"},{"attributes":{},"id":"1274","type":"DataRange1d"},{"attributes":{},"id":"1307","type":"BasicTickFormatter"},{"attributes":{"axis":{"id":"1283"},"dimension":1,"ticker":null},"id":"1286","type":"Grid"},{"attributes":{"factors":["2010","2011","2012","2013","2014","2015","2016","2017","2018","2019","2020"]},"id":"1272","type":"FactorRange"},{"attributes":{"fill_color":{"value":"blue"},"line_color":{"value":"blue"},"top":{"field":"top"},"width":{"value":0.6},"x":{"field":"x"}},"id":"1302","type":"VBar"},{"attributes":{},"id":"1287","type":"PanTool"},{"attributes":{"axis":{"id":"1280"},"ticker":null},"id":"1282","type":"Grid"},{"attributes":{"overlay":{"id":"1293"}},"id":"1289","type":"BoxZoomTool"},{"attributes":{},"id":"1288","type":"WheelZoomTool"},{"attributes":{"source":{"id":"1301"}},"id":"1305","type":"CDSView"},{"attributes":{},"id":"1290","type":"SaveTool"},{"attributes":{},"id":"1309","type":"CategoricalTickFormatter"},{"attributes":{"data":{"top":[460.1,445.8,438.8,420.7,381.9,261.8,247.4,163.7,105.6,36.3,32.97],"x":["2010","2011","2012","2013","2014","2015","2016","2017","2018","2019","2020"]},"selected":{"id":"1313"},"selection_policy":{"id":"1312"}},"id":"1301","type":"ColumnDataSource"},{"attributes":{"axis_label":"YEAR","formatter":{"id":"1309"},"ticker":{"id":"1281"}},"id":"1280","type":"CategoricalAxis"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"blue"},"line_alpha":{"value":0.1},"line_color":{"value":"blue"},"top":{"field":"top"},"width":{"value":0.6},"x":{"field":"x"}},"id":"1303","type":"VBar"},{"attributes":{},"id":"1313","type":"Selection"},{"attributes":{},"id":"1312","type":"UnionRenderers"},{"attributes":{"data_source":{"id":"1301"},"glyph":{"id":"1302"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"1303"},"selection_glyph":null,"view":{"id":"1305"}},"id":"1304","type":"GlyphRenderer"},{"attributes":{},"id":"1281","type":"CategoricalTicker"},{"attributes":{},"id":"1292","type":"HelpTool"},{"attributes":{"below":[{"id":"1280"}],"center":[{"id":"1282"},{"id":"1286"}],"left":[{"id":"1283"}],"renderers":[{"id":"1304"}],"title":{"id":"1270"},"toolbar":{"id":"1294"},"x_range":{"id":"1272"},"x_scale":{"id":"1276"},"y_range":{"id":"1274"},"y_scale":{"id":"1278"}},"id":"1269","subtype":"Figure","type":"Plot"},{"attributes":{"text":"CRIME IN PUNJAB"},"id":"1270","type":"Title"},{"attributes":{},"id":"1284","type":"BasicTicker"},{"attributes":{"axis_label":"CRIME RATE","formatter":{"id":"1307"},"ticker":{"id":"1284"}},"id":"1283","type":"LinearAxis"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_multi":null,"active_scroll":"auto","active_tap":"auto","tools":[{"id":"1287"},{"id":"1288"},{"id":"1289"},{"id":"1290"},{"id":"1291"},{"id":"1292"}]},"id":"1294","type":"Toolbar"},{"attributes":{},"id":"1276","type":"CategoricalScale"},{"attributes":{"bottom_units":"screen","fill_alpha":0.5,"fill_color":"lightgrey","left_units":"screen","level":"overlay","line_alpha":1.0,"line_color":"black","line_dash":[4,4],"line_width":2,"right_units":"screen","top_units":"screen"},"id":"1293","type":"BoxAnnotation"}],"root_ids":["1269"]},"title":"Bokeh Application","version":"2.1.1"}}
+        </script>
+        <script type="text/javascript">
+          (function() {
+            var fn = function() {
+              Bokeh.safely(function() {
+                (function(root) {
+                  function embed_document(root) {
+                    
+                  var docs_json = document.getElementById('1402').textContent;
+                  var render_items = [{"docid":"94406089-a4a1-43b7-aa9d-082ada4cb3a2","root_ids":["1269"],"roots":{"1269":"7478a664-0578-4970-9276-4c90bda90d1c"}}];
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                
+                  }
+                  if (root.Bokeh !== undefined) {
+                    embed_document(root);
+                  } else {
+                    var attempts = 0;
+                    var timer = setInterval(function(root) {
+                      if (root.Bokeh !== undefined) {
+                        clearInterval(timer);
+                        embed_document(root);
+                      } else {
+                        attempts++;
+                        if (attempts > 100) {
+                          clearInterval(timer);
+                          console.log("Bokeh: ERROR: Unable to run BokehJS code because BokehJS library is missing");
+                        }
+                      }
+                    }, 10, root)
+                  }
+                })(window);
+              });
+            };
+            if (document.readyState != "loading") fn();
+            else document.addEventListener("DOMContentLoaded", fn);
+          })();
+        </script>
+    
+  </body>
+  
+</html>

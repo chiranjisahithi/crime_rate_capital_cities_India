@@ -1,0 +1,85 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  
+  <head>
+    
+      <meta charset="utf-8">
+      <title>Bokeh Plot</title>
+      
+      
+        
+          
+        
+        
+          
+        <script type="text/javascript" src="https://cdn.bokeh.org/bokeh/release/bokeh-2.1.1.min.js" integrity="sha384-kLr4fYcqcSpbuI95brIH3vnnYCquzzSxHPU6XGQCIkQRGJwhg0StNbj1eegrHs12" crossorigin="anonymous"></script>
+        <script type="text/javascript">
+            Bokeh.set_log_level("info");
+        </script>
+        
+      
+      
+    
+  </head>
+  
+  
+  <body>
+    
+      
+        
+          
+          
+            
+              <div class="bk-root" id="fda23100-01a2-4ac4-a83e-643deb528382" data-root-id="3989"></div>
+            
+          
+        
+      
+      
+        <script type="application/json" id="4219">
+          {"7f5681b3-59cb-4195-9274-285ad7e7e2bc":{"roots":{"references":[{"attributes":{"data_source":{"id":"3988"},"glyph":{"id":"4023"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"4024"},"selection_glyph":null,"view":{"id":"4026"}},"id":"4025","type":"GlyphRenderer"},{"attributes":{},"id":"4013","type":"HelpTool"},{"attributes":{"overlay":{"id":"4014"}},"id":"4010","type":"BoxZoomTool"},{"attributes":{"fill_color":{"value":"yellow"},"line_color":{"value":"yellow"},"x":{"field":"Year"},"y":{"field":"TOTAL_CAMERAS"}},"id":"4028","type":"Square"},{"attributes":{},"id":"4012","type":"ResetTool"},{"attributes":{},"id":"4011","type":"SaveTool"},{"attributes":{},"id":"4035","type":"BasicTickFormatter"},{"attributes":{},"id":"4008","type":"PanTool"},{"attributes":{},"id":"3998","type":"LinearScale"},{"attributes":{"below":[{"id":"4000"}],"center":[{"id":"4003"},{"id":"4007"}],"left":[{"id":"4004"}],"plot_height":400,"plot_width":400,"renderers":[{"id":"4025"},{"id":"4030"}],"title":{"id":"3990"},"toolbar":{"id":"4015"},"x_range":{"id":"3992"},"x_scale":{"id":"3996"},"y_range":{"id":"3994"},"y_scale":{"id":"3998"}},"id":"3989","subtype":"Figure","type":"Plot"},{"attributes":{"data_source":{"id":"3988"},"glyph":{"id":"4028"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"4029"},"selection_glyph":null,"view":{"id":"4031"}},"id":"4030","type":"GlyphRenderer"},{"attributes":{"source":{"id":"3988"}},"id":"4026","type":"CDSView"},{"attributes":{"line_color":"red","line_width":4,"x":{"field":"Year"},"y":{"field":"TOTAL_CAMERAS"}},"id":"4023","type":"Line"},{"attributes":{"data":{"AGAINST_WOMEN":[470556,437844,398604,315074,309546,286540,243041,173947,243041,147767,112567],"CRIME_INDEX":{"__ndarray__":"zczMzMxMiUDNzMzMzISIQDMzMzMzf4VAZmZmZmaWhECamZmZmaWCQJqZmZmZ7YFAmpmZmZl5fkAAAAAAAMh6QAAAAAAAeHRAZmZmZmbmUUC4HoXrUVhNQA==","dtype":"float64","order":"little","shape":[11]},"TOTAL_BURGLARY":[624,2360,1898,1875,1950,2055,1926,1733,23088,22899,22032],"TOTAL_CAMERAS":[24357,36597,47859,58690,65934,74930,83900,96300,140000,254800,429500],"TOTAL_CASES":[489925,457378,416515,345728,328647,312846,276583,197635,169348,148936,173735],"TOTAL_DACOITY":[13668,47,28,30,14,34,24,36,599,562,608],"TOTAL_ROBBERY":[48,502,441,461,541,557,541,515,1502,1419,1715],"TOTAL_THEFT":[3029,16625,15544,18994,17498,17037,18867,21731,15436,33,28],"Year":[2010,2011,2012,2013,2014,2015,2016,2017,2018,2019,2020],"index":[0,1,2,3,4,5,6,7,8,9,10]},"selected":{"id":"4039"},"selection_policy":{"id":"4040"}},"id":"3988","type":"ColumnDataSource"},{"attributes":{"line_alpha":0.1,"line_color":"red","line_width":4,"x":{"field":"Year"},"y":{"field":"TOTAL_CAMERAS"}},"id":"4024","type":"Line"},{"attributes":{"axis_label":"YEAR","formatter":{"id":"4035"},"ticker":{"id":"4001"}},"id":"4000","type":"LinearAxis"},{"attributes":{},"id":"3992","type":"DataRange1d"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"yellow"},"line_alpha":{"value":0.1},"line_color":{"value":"yellow"},"x":{"field":"Year"},"y":{"field":"TOTAL_CAMERAS"}},"id":"4029","type":"Square"},{"attributes":{"callback":null,"tooltips":[["Year","@Year"],["Number of Cameras","@TOTAL_CAMERAS"]]},"id":"4032","type":"HoverTool"},{"attributes":{"source":{"id":"3988"}},"id":"4031","type":"CDSView"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_multi":null,"active_scroll":"auto","active_tap":"auto","tools":[{"id":"4008"},{"id":"4009"},{"id":"4010"},{"id":"4011"},{"id":"4012"},{"id":"4013"},{"id":"4032"}]},"id":"4015","type":"Toolbar"},{"attributes":{"text":"SURVEILLANCE"},"id":"3990","type":"Title"},{"attributes":{},"id":"4001","type":"BasicTicker"},{"attributes":{},"id":"4037","type":"BasicTickFormatter"},{"attributes":{},"id":"4039","type":"Selection"},{"attributes":{},"id":"3996","type":"LinearScale"},{"attributes":{},"id":"4040","type":"UnionRenderers"},{"attributes":{"axis":{"id":"4004"},"dimension":1,"ticker":null},"id":"4007","type":"Grid"},{"attributes":{"bottom_units":"screen","fill_alpha":0.5,"fill_color":"lightgrey","left_units":"screen","level":"overlay","line_alpha":1.0,"line_color":"black","line_dash":[4,4],"line_width":2,"right_units":"screen","top_units":"screen"},"id":"4014","type":"BoxAnnotation"},{"attributes":{"axis":{"id":"4000"},"ticker":null},"id":"4003","type":"Grid"},{"attributes":{"axis_label":"Number of Cameras","formatter":{"id":"4037"},"ticker":{"id":"4005"}},"id":"4004","type":"LinearAxis"},{"attributes":{},"id":"4009","type":"WheelZoomTool"},{"attributes":{},"id":"4005","type":"BasicTicker"},{"attributes":{},"id":"3994","type":"DataRange1d"}],"root_ids":["3989"]},"title":"Bokeh Application","version":"2.1.1"}}
+        </script>
+        <script type="text/javascript">
+          (function() {
+            var fn = function() {
+              Bokeh.safely(function() {
+                (function(root) {
+                  function embed_document(root) {
+                    
+                  var docs_json = document.getElementById('4219').textContent;
+                  var render_items = [{"docid":"7f5681b3-59cb-4195-9274-285ad7e7e2bc","root_ids":["3989"],"roots":{"3989":"fda23100-01a2-4ac4-a83e-643deb528382"}}];
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                
+                  }
+                  if (root.Bokeh !== undefined) {
+                    embed_document(root);
+                  } else {
+                    var attempts = 0;
+                    var timer = setInterval(function(root) {
+                      if (root.Bokeh !== undefined) {
+                        clearInterval(timer);
+                        embed_document(root);
+                      } else {
+                        attempts++;
+                        if (attempts > 100) {
+                          clearInterval(timer);
+                          console.log("Bokeh: ERROR: Unable to run BokehJS code because BokehJS library is missing");
+                        }
+                      }
+                    }, 10, root)
+                  }
+                })(window);
+              });
+            };
+            if (document.readyState != "loading") fn();
+            else document.addEventListener("DOMContentLoaded", fn);
+          })();
+        </script>
+    
+  </body>
+  
+</html>

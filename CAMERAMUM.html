@@ -1,0 +1,85 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  
+  <head>
+    
+      <meta charset="utf-8">
+      <title>Bokeh Plot</title>
+      
+      
+        
+          
+        
+        
+          
+        <script type="text/javascript" src="https://cdn.bokeh.org/bokeh/release/bokeh-2.1.1.min.js" integrity="sha384-kLr4fYcqcSpbuI95brIH3vnnYCquzzSxHPU6XGQCIkQRGJwhg0StNbj1eegrHs12" crossorigin="anonymous"></script>
+        <script type="text/javascript">
+            Bokeh.set_log_level("info");
+        </script>
+        
+      
+      
+    
+  </head>
+  
+  
+  <body>
+    
+      
+        
+          
+          
+            
+              <div class="bk-root" id="7866bb12-5295-4358-ab24-9a2ff45f5aad" data-root-id="1805"></div>
+            
+          
+        
+      
+      
+        <script type="application/json" id="1938">
+          {"263ec40d-0828-4c91-9490-0e6130ec0ca6":{"roots":{"references":[{"attributes":{},"id":"1823","type":"PanTool"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"blue"},"line_alpha":{"value":0.1},"line_color":{"value":"blue"},"top":{"field":"top"},"width":{"value":0.6},"x":{"field":"x"}},"id":"1839","type":"VBar"},{"attributes":{"bottom_units":"screen","fill_alpha":0.5,"fill_color":"lightgrey","left_units":"screen","level":"overlay","line_alpha":1.0,"line_color":"black","line_dash":[4,4],"line_width":2,"right_units":"screen","top_units":"screen"},"id":"1829","type":"BoxAnnotation"},{"attributes":{},"id":"1824","type":"WheelZoomTool"},{"attributes":{},"id":"1828","type":"HelpTool"},{"attributes":{"overlay":{"id":"1829"}},"id":"1825","type":"BoxZoomTool"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_multi":null,"active_scroll":"auto","active_tap":"auto","tools":[{"id":"1823"},{"id":"1824"},{"id":"1825"},{"id":"1826"},{"id":"1827"},{"id":"1828"}]},"id":"1830","type":"Toolbar"},{"attributes":{},"id":"1826","type":"SaveTool"},{"attributes":{},"id":"1827","type":"ResetTool"},{"attributes":{},"id":"1817","type":"CategoricalTicker"},{"attributes":{},"id":"1810","type":"DataRange1d"},{"attributes":{"data_source":{"id":"1837"},"glyph":{"id":"1838"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"1839"},"selection_glyph":null,"view":{"id":"1841"}},"id":"1840","type":"GlyphRenderer"},{"attributes":{"source":{"id":"1837"}},"id":"1841","type":"CDSView"},{"attributes":{"factors":["2010","2011","2012","2013","2014","2015","2016","2017","2018","2019","2020"]},"id":"1808","type":"FactorRange"},{"attributes":{},"id":"1848","type":"UnionRenderers"},{"attributes":{"text":"CRIME IN MUMBAI"},"id":"1806","type":"Title"},{"attributes":{},"id":"1849","type":"Selection"},{"attributes":{"fill_color":{"value":"blue"},"line_color":{"value":"blue"},"top":{"field":"top"},"width":{"value":0.6},"x":{"field":"x"}},"id":"1838","type":"VBar"},{"attributes":{"data":{"top":[1269,1578,1986,2355,2976,3473,4200,4746,9654,8587,9800],"x":["2010","2011","2012","2013","2014","2015","2016","2017","2018","2019","2020"]},"selected":{"id":"1849"},"selection_policy":{"id":"1848"}},"id":"1837","type":"ColumnDataSource"},{"attributes":{"below":[{"id":"1816"}],"center":[{"id":"1818"},{"id":"1822"}],"left":[{"id":"1819"}],"renderers":[{"id":"1840"}],"title":{"id":"1806"},"toolbar":{"id":"1830"},"x_range":{"id":"1808"},"x_scale":{"id":"1812"},"y_range":{"id":"1810"},"y_scale":{"id":"1814"}},"id":"1805","subtype":"Figure","type":"Plot"},{"attributes":{"axis_label":"NUMBER OF CAMERAS","formatter":{"id":"1843"},"ticker":{"id":"1820"}},"id":"1819","type":"LinearAxis"},{"attributes":{},"id":"1820","type":"BasicTicker"},{"attributes":{},"id":"1812","type":"CategoricalScale"},{"attributes":{"axis":{"id":"1816"},"ticker":null},"id":"1818","type":"Grid"},{"attributes":{},"id":"1845","type":"CategoricalTickFormatter"},{"attributes":{},"id":"1814","type":"LinearScale"},{"attributes":{},"id":"1843","type":"BasicTickFormatter"},{"attributes":{"axis":{"id":"1819"},"dimension":1,"ticker":null},"id":"1822","type":"Grid"},{"attributes":{"axis_label":"YEAR","formatter":{"id":"1845"},"ticker":{"id":"1817"}},"id":"1816","type":"CategoricalAxis"}],"root_ids":["1805"]},"title":"Bokeh Application","version":"2.1.1"}}
+        </script>
+        <script type="text/javascript">
+          (function() {
+            var fn = function() {
+              Bokeh.safely(function() {
+                (function(root) {
+                  function embed_document(root) {
+                    
+                  var docs_json = document.getElementById('1938').textContent;
+                  var render_items = [{"docid":"263ec40d-0828-4c91-9490-0e6130ec0ca6","root_ids":["1805"],"roots":{"1805":"7866bb12-5295-4358-ab24-9a2ff45f5aad"}}];
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                
+                  }
+                  if (root.Bokeh !== undefined) {
+                    embed_document(root);
+                  } else {
+                    var attempts = 0;
+                    var timer = setInterval(function(root) {
+                      if (root.Bokeh !== undefined) {
+                        clearInterval(timer);
+                        embed_document(root);
+                      } else {
+                        attempts++;
+                        if (attempts > 100) {
+                          clearInterval(timer);
+                          console.log("Bokeh: ERROR: Unable to run BokehJS code because BokehJS library is missing");
+                        }
+                      }
+                    }, 10, root)
+                  }
+                })(window);
+              });
+            };
+            if (document.readyState != "loading") fn();
+            else document.addEventListener("DOMContentLoaded", fn);
+          })();
+        </script>
+    
+  </body>
+  
+</html>

@@ -1,0 +1,85 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  
+  <head>
+    
+      <meta charset="utf-8">
+      <title>Bokeh Plot</title>
+      
+      
+        
+          
+        
+        
+          
+        <script type="text/javascript" src="https://cdn.bokeh.org/bokeh/release/bokeh-2.1.1.min.js" integrity="sha384-kLr4fYcqcSpbuI95brIH3vnnYCquzzSxHPU6XGQCIkQRGJwhg0StNbj1eegrHs12" crossorigin="anonymous"></script>
+        <script type="text/javascript">
+            Bokeh.set_log_level("info");
+        </script>
+        
+      
+      
+    
+  </head>
+  
+  
+  <body>
+    
+      
+        
+          
+          
+            
+              <div class="bk-root" id="00b5906b-4acf-43ca-a181-77bb65e78f13" data-root-id="1423"></div>
+            
+          
+        
+      
+      
+        <script type="application/json" id="1556">
+          {"d0ce90a8-4f09-4208-9c5c-c5eb97876cc2":{"roots":{"references":[{"attributes":{"axis_label":"YEAR","formatter":{"id":"1461"},"ticker":{"id":"1435"}},"id":"1434","type":"CategoricalAxis"},{"attributes":{},"id":"1463","type":"BasicTickFormatter"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"blue"},"line_alpha":{"value":0.1},"line_color":{"value":"blue"},"top":{"field":"top"},"width":{"value":0.6},"x":{"field":"x"}},"id":"1457","type":"VBar"},{"attributes":{"axis":{"id":"1437"},"dimension":1,"ticker":null},"id":"1440","type":"Grid"},{"attributes":{"data_source":{"id":"1455"},"glyph":{"id":"1456"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"1457"},"selection_glyph":null,"view":{"id":"1459"}},"id":"1458","type":"GlyphRenderer"},{"attributes":{"bottom_units":"screen","fill_alpha":0.5,"fill_color":"lightgrey","left_units":"screen","level":"overlay","line_alpha":1.0,"line_color":"black","line_dash":[4,4],"line_width":2,"right_units":"screen","top_units":"screen"},"id":"1447","type":"BoxAnnotation"},{"attributes":{},"id":"1442","type":"WheelZoomTool"},{"attributes":{"text":"CRIME IN RAIPUR"},"id":"1424","type":"Title"},{"attributes":{"axis_label":"CRIME RATE","formatter":{"id":"1463"},"ticker":{"id":"1438"}},"id":"1437","type":"LinearAxis"},{"attributes":{"factors":["2010","2011","2012","2013","2014","2015","2016","2017","2018","2019","2020"]},"id":"1426","type":"FactorRange"},{"attributes":{"source":{"id":"1455"}},"id":"1459","type":"CDSView"},{"attributes":{},"id":"1446","type":"HelpTool"},{"attributes":{},"id":"1441","type":"PanTool"},{"attributes":{"overlay":{"id":"1447"}},"id":"1443","type":"BoxZoomTool"},{"attributes":{},"id":"1444","type":"SaveTool"},{"attributes":{},"id":"1438","type":"BasicTicker"},{"attributes":{},"id":"1466","type":"Selection"},{"attributes":{},"id":"1435","type":"CategoricalTicker"},{"attributes":{},"id":"1467","type":"UnionRenderers"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_multi":null,"active_scroll":"auto","active_tap":"auto","tools":[{"id":"1441"},{"id":"1442"},{"id":"1443"},{"id":"1444"},{"id":"1445"},{"id":"1446"}]},"id":"1448","type":"Toolbar"},{"attributes":{"fill_color":{"value":"blue"},"line_color":{"value":"blue"},"top":{"field":"top"},"width":{"value":0.6},"x":{"field":"x"}},"id":"1456","type":"VBar"},{"attributes":{},"id":"1445","type":"ResetTool"},{"attributes":{},"id":"1461","type":"CategoricalTickFormatter"},{"attributes":{"below":[{"id":"1434"}],"center":[{"id":"1436"},{"id":"1440"}],"left":[{"id":"1437"}],"renderers":[{"id":"1458"}],"title":{"id":"1424"},"toolbar":{"id":"1448"},"x_range":{"id":"1426"},"x_scale":{"id":"1430"},"y_range":{"id":"1428"},"y_scale":{"id":"1432"}},"id":"1423","subtype":"Figure","type":"Plot"},{"attributes":{"data":{"top":[807.5,794.5,765.3,721.9,641.5,593.7,547.6,479.5,416.8,391.4,355.5],"x":["2010","2011","2012","2013","2014","2015","2016","2017","2018","2019","2020"]},"selected":{"id":"1466"},"selection_policy":{"id":"1467"}},"id":"1455","type":"ColumnDataSource"},{"attributes":{},"id":"1430","type":"CategoricalScale"},{"attributes":{},"id":"1428","type":"DataRange1d"},{"attributes":{"axis":{"id":"1434"},"ticker":null},"id":"1436","type":"Grid"},{"attributes":{},"id":"1432","type":"LinearScale"}],"root_ids":["1423"]},"title":"Bokeh Application","version":"2.1.1"}}
+        </script>
+        <script type="text/javascript">
+          (function() {
+            var fn = function() {
+              Bokeh.safely(function() {
+                (function(root) {
+                  function embed_document(root) {
+                    
+                  var docs_json = document.getElementById('1556').textContent;
+                  var render_items = [{"docid":"d0ce90a8-4f09-4208-9c5c-c5eb97876cc2","root_ids":["1423"],"roots":{"1423":"00b5906b-4acf-43ca-a181-77bb65e78f13"}}];
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                
+                  }
+                  if (root.Bokeh !== undefined) {
+                    embed_document(root);
+                  } else {
+                    var attempts = 0;
+                    var timer = setInterval(function(root) {
+                      if (root.Bokeh !== undefined) {
+                        clearInterval(timer);
+                        embed_document(root);
+                      } else {
+                        attempts++;
+                        if (attempts > 100) {
+                          clearInterval(timer);
+                          console.log("Bokeh: ERROR: Unable to run BokehJS code because BokehJS library is missing");
+                        }
+                      }
+                    }, 10, root)
+                  }
+                })(window);
+              });
+            };
+            if (document.readyState != "loading") fn();
+            else document.addEventListener("DOMContentLoaded", fn);
+          })();
+        </script>
+    
+  </body>
+  
+</html>

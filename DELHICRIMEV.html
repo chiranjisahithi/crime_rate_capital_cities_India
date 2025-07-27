@@ -1,0 +1,85 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  
+  <head>
+    
+      <meta charset="utf-8">
+      <title>Bokeh Plot</title>
+      
+      
+        
+          
+        
+        
+          
+        <script type="text/javascript" src="https://cdn.bokeh.org/bokeh/release/bokeh-2.1.1.min.js" integrity="sha384-kLr4fYcqcSpbuI95brIH3vnnYCquzzSxHPU6XGQCIkQRGJwhg0StNbj1eegrHs12" crossorigin="anonymous"></script>
+        <script type="text/javascript">
+            Bokeh.set_log_level("info");
+        </script>
+        
+      
+      
+    
+  </head>
+  
+  
+  <body>
+    
+      
+        
+          
+          
+            
+              <div class="bk-root" id="1d8a7c58-8441-4ee2-90af-289388e07e71" data-root-id="2777"></div>
+            
+          
+        
+      
+      
+        <script type="application/json" id="3028">
+          {"92447ed9-bfa2-4b1b-816f-25f8820a064f":{"roots":{"references":[{"attributes":{"below":[{"id":"2788"}],"center":[{"id":"2790"},{"id":"2794"}],"left":[{"id":"2791"}],"renderers":[{"id":"2812"}],"title":{"id":"2778"},"toolbar":{"id":"2802"},"x_range":{"id":"2780"},"x_scale":{"id":"2784"},"y_range":{"id":"2782"},"y_scale":{"id":"2786"}},"id":"2777","subtype":"Figure","type":"Plot"},{"attributes":{"source":{"id":"2809"}},"id":"2813","type":"CDSView"},{"attributes":{"fill_color":{"value":"green"},"line_color":{"value":"green"},"top":{"field":"top"},"width":{"value":0.6},"x":{"field":"x"}},"id":"2810","type":"VBar"},{"attributes":{"factors":["2010","2011","2012","2013","2014","2015","2016","2017","2018","2019","2020"]},"id":"2780","type":"FactorRange"},{"attributes":{},"id":"2881","type":"Selection"},{"attributes":{"data_source":{"id":"2809"},"glyph":{"id":"2810"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"2811"},"selection_glyph":null,"view":{"id":"2813"}},"id":"2812","type":"GlyphRenderer"},{"attributes":{},"id":"2882","type":"UnionRenderers"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"green"},"line_alpha":{"value":0.1},"line_color":{"value":"green"},"top":{"field":"top"},"width":{"value":0.6},"x":{"field":"x"}},"id":"2811","type":"VBar"},{"attributes":{},"id":"2782","type":"DataRange1d"},{"attributes":{},"id":"2784","type":"CategoricalScale"},{"attributes":{"callback":null,"tooltips":[["year","@value"],["Number of Cameras","@TOTAL_CAMERAS"],["dacoity","@value"],["burglary","@value"],["theft","@value"],["women","@value"]]},"id":"2814","type":"HoverTool"},{"attributes":{"bottom_units":"screen","fill_alpha":0.5,"fill_color":"lightgrey","left_units":"screen","level":"overlay","line_alpha":1.0,"line_color":"black","line_dash":[4,4],"line_width":2,"right_units":"screen","top_units":"screen"},"id":"2801","type":"BoxAnnotation"},{"attributes":{},"id":"2878","type":"CategoricalTickFormatter"},{"attributes":{},"id":"2795","type":"PanTool"},{"attributes":{},"id":"2880","type":"BasicTickFormatter"},{"attributes":{"data":{"top":[809.6,784.6,687.9,658.8,596.7,573.7,487.6,428.5,327.5,71.6,58.69],"x":["2010","2011","2012","2013","2014","2015","2016","2017","2018","2019","2020"]},"selected":{"id":"2881"},"selection_policy":{"id":"2882"}},"id":"2809","type":"ColumnDataSource"},{"attributes":{},"id":"2799","type":"ResetTool"},{"attributes":{"axis":{"id":"2791"},"dimension":1,"ticker":null},"id":"2794","type":"Grid"},{"attributes":{},"id":"2789","type":"CategoricalTicker"},{"attributes":{},"id":"2800","type":"HelpTool"},{"attributes":{"axis_label":"YEAR","formatter":{"id":"2878"},"ticker":{"id":"2789"}},"id":"2788","type":"CategoricalAxis"},{"attributes":{},"id":"2786","type":"LinearScale"},{"attributes":{"text":"CAMERAS IN DELHI"},"id":"2778","type":"Title"},{"attributes":{},"id":"2798","type":"SaveTool"},{"attributes":{"axis_label":"CRIME RATE ","formatter":{"id":"2880"},"ticker":{"id":"2792"}},"id":"2791","type":"LinearAxis"},{"attributes":{"overlay":{"id":"2801"}},"id":"2797","type":"BoxZoomTool"},{"attributes":{"axis":{"id":"2788"},"ticker":null},"id":"2790","type":"Grid"},{"attributes":{},"id":"2792","type":"BasicTicker"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_multi":null,"active_scroll":"auto","active_tap":"auto","tools":[{"id":"2795"},{"id":"2796"},{"id":"2797"},{"id":"2798"},{"id":"2799"},{"id":"2800"},{"id":"2814"}]},"id":"2802","type":"Toolbar"},{"attributes":{},"id":"2796","type":"WheelZoomTool"}],"root_ids":["2777"]},"title":"Bokeh Application","version":"2.1.1"}}
+        </script>
+        <script type="text/javascript">
+          (function() {
+            var fn = function() {
+              Bokeh.safely(function() {
+                (function(root) {
+                  function embed_document(root) {
+                    
+                  var docs_json = document.getElementById('3028').textContent;
+                  var render_items = [{"docid":"92447ed9-bfa2-4b1b-816f-25f8820a064f","root_ids":["2777"],"roots":{"2777":"1d8a7c58-8441-4ee2-90af-289388e07e71"}}];
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                
+                  }
+                  if (root.Bokeh !== undefined) {
+                    embed_document(root);
+                  } else {
+                    var attempts = 0;
+                    var timer = setInterval(function(root) {
+                      if (root.Bokeh !== undefined) {
+                        clearInterval(timer);
+                        embed_document(root);
+                      } else {
+                        attempts++;
+                        if (attempts > 100) {
+                          clearInterval(timer);
+                          console.log("Bokeh: ERROR: Unable to run BokehJS code because BokehJS library is missing");
+                        }
+                      }
+                    }, 10, root)
+                  }
+                })(window);
+              });
+            };
+            if (document.readyState != "loading") fn();
+            else document.addEventListener("DOMContentLoaded", fn);
+          })();
+        </script>
+    
+  </body>
+  
+</html>

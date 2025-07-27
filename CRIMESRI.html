@@ -1,0 +1,85 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  
+  <head>
+    
+      <meta charset="utf-8">
+      <title>Bokeh Plot</title>
+      
+      
+        
+          
+        
+        
+          
+        <script type="text/javascript" src="https://cdn.bokeh.org/bokeh/release/bokeh-2.1.1.min.js" integrity="sha384-kLr4fYcqcSpbuI95brIH3vnnYCquzzSxHPU6XGQCIkQRGJwhg0StNbj1eegrHs12" crossorigin="anonymous"></script>
+        <script type="text/javascript">
+            Bokeh.set_log_level("info");
+        </script>
+        
+      
+      
+    
+  </head>
+  
+  
+  <body>
+    
+      
+        
+          
+          
+            
+              <div class="bk-root" id="27b1d51d-cb10-49b2-b9db-6ef4b71c011f" data-root-id="1683"></div>
+            
+          
+        
+      
+      
+        <script type="application/json" id="1816">
+          {"947631c1-469b-4157-a2c2-af7a7f00dcdf":{"roots":{"references":[{"attributes":{},"id":"1726","type":"Selection"},{"attributes":{"text":"CRIME IN HYDERABAD"},"id":"1684","type":"Title"},{"attributes":{},"id":"1688","type":"DataRange1d"},{"attributes":{"factors":["415.6","411.7","399.8","380.5","370.5","350.5","315.8","307.7","295.7","60.3"]},"id":"1686","type":"FactorRange"},{"attributes":{},"id":"1695","type":"CategoricalTicker"},{"attributes":{"source":{"id":"1715"}},"id":"1719","type":"CDSView"},{"attributes":{},"id":"1692","type":"LinearScale"},{"attributes":{"data":{"top":[13588,15489,17125,17549,18654,20654,22695,23750,25673,275528],"x":["415.6","411.7","399.8","380.5","370.5","350.5","315.8","307.7","295.7","60.3"]},"selected":{"id":"1726"},"selection_policy":{"id":"1725"}},"id":"1715","type":"ColumnDataSource"},{"attributes":{"axis_label":"NUMBER OF CAMERAS","formatter":{"id":"1723"},"ticker":{"id":"1698"}},"id":"1697","type":"LinearAxis"},{"attributes":{"below":[{"id":"1694"}],"center":[{"id":"1696"},{"id":"1700"}],"left":[{"id":"1697"}],"renderers":[{"id":"1718"}],"title":{"id":"1684"},"toolbar":{"id":"1708"},"x_range":{"id":"1686"},"x_scale":{"id":"1690"},"y_range":{"id":"1688"},"y_scale":{"id":"1692"}},"id":"1683","subtype":"Figure","type":"Plot"},{"attributes":{"bottom_units":"screen","fill_alpha":0.5,"fill_color":"lightgrey","left_units":"screen","level":"overlay","line_alpha":1.0,"line_color":"black","line_dash":[4,4],"line_width":2,"right_units":"screen","top_units":"screen"},"id":"1707","type":"BoxAnnotation"},{"attributes":{"axis":{"id":"1694"},"ticker":null},"id":"1696","type":"Grid"},{"attributes":{"axis":{"id":"1697"},"dimension":1,"ticker":null},"id":"1700","type":"Grid"},{"attributes":{},"id":"1723","type":"BasicTickFormatter"},{"attributes":{},"id":"1702","type":"WheelZoomTool"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_multi":null,"active_scroll":"auto","active_tap":"auto","tools":[{"id":"1701"},{"id":"1702"},{"id":"1703"},{"id":"1704"},{"id":"1705"},{"id":"1706"}]},"id":"1708","type":"Toolbar"},{"attributes":{},"id":"1701","type":"PanTool"},{"attributes":{},"id":"1706","type":"HelpTool"},{"attributes":{"axis_label":"CRIME RATE","formatter":{"id":"1721"},"ticker":{"id":"1695"}},"id":"1694","type":"CategoricalAxis"},{"attributes":{"overlay":{"id":"1707"}},"id":"1703","type":"BoxZoomTool"},{"attributes":{},"id":"1725","type":"UnionRenderers"},{"attributes":{},"id":"1704","type":"SaveTool"},{"attributes":{"fill_color":{"value":"orange"},"line_color":{"value":"orange"},"top":{"field":"top"},"width":{"value":0.6},"x":{"field":"x"}},"id":"1716","type":"VBar"},{"attributes":{},"id":"1705","type":"ResetTool"},{"attributes":{"data_source":{"id":"1715"},"glyph":{"id":"1716"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"1717"},"selection_glyph":null,"view":{"id":"1719"}},"id":"1718","type":"GlyphRenderer"},{"attributes":{},"id":"1721","type":"CategoricalTickFormatter"},{"attributes":{},"id":"1690","type":"CategoricalScale"},{"attributes":{},"id":"1698","type":"BasicTicker"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"orange"},"line_alpha":{"value":0.1},"line_color":{"value":"orange"},"top":{"field":"top"},"width":{"value":0.6},"x":{"field":"x"}},"id":"1717","type":"VBar"}],"root_ids":["1683"]},"title":"Bokeh Application","version":"2.1.1"}}
+        </script>
+        <script type="text/javascript">
+          (function() {
+            var fn = function() {
+              Bokeh.safely(function() {
+                (function(root) {
+                  function embed_document(root) {
+                    
+                  var docs_json = document.getElementById('1816').textContent;
+                  var render_items = [{"docid":"947631c1-469b-4157-a2c2-af7a7f00dcdf","root_ids":["1683"],"roots":{"1683":"27b1d51d-cb10-49b2-b9db-6ef4b71c011f"}}];
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                
+                  }
+                  if (root.Bokeh !== undefined) {
+                    embed_document(root);
+                  } else {
+                    var attempts = 0;
+                    var timer = setInterval(function(root) {
+                      if (root.Bokeh !== undefined) {
+                        clearInterval(timer);
+                        embed_document(root);
+                      } else {
+                        attempts++;
+                        if (attempts > 100) {
+                          clearInterval(timer);
+                          console.log("Bokeh: ERROR: Unable to run BokehJS code because BokehJS library is missing");
+                        }
+                      }
+                    }, 10, root)
+                  }
+                })(window);
+              });
+            };
+            if (document.readyState != "loading") fn();
+            else document.addEventListener("DOMContentLoaded", fn);
+          })();
+        </script>
+    
+  </body>
+  
+</html>

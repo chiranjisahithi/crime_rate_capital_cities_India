@@ -1,0 +1,85 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  
+  <head>
+    
+      <meta charset="utf-8">
+      <title>Bokeh Plot</title>
+      
+      
+        
+          
+        
+        
+          
+        <script type="text/javascript" src="https://cdn.bokeh.org/bokeh/release/bokeh-2.1.1.min.js" integrity="sha384-kLr4fYcqcSpbuI95brIH3vnnYCquzzSxHPU6XGQCIkQRGJwhg0StNbj1eegrHs12" crossorigin="anonymous"></script>
+        <script type="text/javascript">
+            Bokeh.set_log_level("info");
+        </script>
+        
+      
+      
+    
+  </head>
+  
+  
+  <body>
+    
+      
+        
+          
+          
+            
+              <div class="bk-root" id="14f559ba-19df-4d53-8943-c032fb8f6459" data-root-id="2275"></div>
+            
+          
+        
+      
+      
+        <script type="application/json" id="2516">
+          {"c7ebef9a-52fa-44dc-9b9f-da8c24484582":{"roots":{"references":[{"attributes":{"below":[{"id":"2286"}],"center":[{"id":"2289"},{"id":"2293"}],"left":[{"id":"2290"}],"plot_height":400,"plot_width":400,"renderers":[{"id":"2311"},{"id":"2316"}],"title":{"id":"2276"},"toolbar":{"id":"2301"},"x_range":{"id":"2278"},"x_scale":{"id":"2282"},"y_range":{"id":"2280"},"y_scale":{"id":"2284"}},"id":"2275","subtype":"Figure","type":"Plot"},{"attributes":{},"id":"2298","type":"ResetTool"},{"attributes":{},"id":"2368","type":"BasicTickFormatter"},{"attributes":{"data_source":{"id":"2274"},"glyph":{"id":"2314"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"2315"},"selection_glyph":null,"view":{"id":"2317"}},"id":"2316","type":"GlyphRenderer"},{"attributes":{"bottom_units":"screen","fill_alpha":0.5,"fill_color":"lightgrey","left_units":"screen","level":"overlay","line_alpha":1.0,"line_color":"black","line_dash":[4,4],"line_width":2,"right_units":"screen","top_units":"screen"},"id":"2300","type":"BoxAnnotation"},{"attributes":{"text":"SURVEILLANCE"},"id":"2276","type":"Title"},{"attributes":{},"id":"2287","type":"BasicTicker"},{"attributes":{"axis_label":"Number of Cameras","formatter":{"id":"2368"},"ticker":{"id":"2291"}},"id":"2290","type":"LinearAxis"},{"attributes":{},"id":"2278","type":"DataRange1d"},{"attributes":{},"id":"2366","type":"BasicTickFormatter"},{"attributes":{},"id":"2280","type":"DataRange1d"},{"attributes":{},"id":"2369","type":"Selection"},{"attributes":{},"id":"2370","type":"UnionRenderers"},{"attributes":{"data":{"AGAINST_WOMEN":[470556,437844,398604,315074,309546,286540,243041,173947,243041,147767,112567],"CRIME_INDEX":{"__ndarray__":"zczMzMxMiUDNzMzMzISIQDMzMzMzf4VAZmZmZmaWhECamZmZmaWCQJqZmZmZ7YFAmpmZmZl5fkAAAAAAAMh6QAAAAAAAeHRAZmZmZmbmUUC4HoXrUVhNQA==","dtype":"float64","order":"little","shape":[11]},"TOTAL_BURGLARY":[624,2360,1898,1875,1950,2055,1926,1733,23088,22899,22032],"TOTAL_CAMERAS":[24357,36597,47859,58690,65934,74930,83900,96300,140000,254800,429500],"TOTAL_CASES":[489925,457378,416515,345728,328647,312846,276583,197635,169348,148936,173735],"TOTAL_DACOITY":[13668,47,28,30,14,34,24,36,599,562,608],"TOTAL_ROBBERY":[48,502,441,461,541,557,541,515,1502,1419,1715],"TOTAL_THEFT":[3029,16625,15544,18994,17498,17037,18867,21731,15436,33,28],"Year":[2010,2011,2012,2013,2014,2015,2016,2017,2018,2019,2020],"index":[0,1,2,3,4,5,6,7,8,9,10]},"selected":{"id":"2369"},"selection_policy":{"id":"2370"}},"id":"2274","type":"ColumnDataSource"},{"attributes":{},"id":"2295","type":"WheelZoomTool"},{"attributes":{"axis":{"id":"2286"},"ticker":null},"id":"2289","type":"Grid"},{"attributes":{"source":{"id":"2274"}},"id":"2317","type":"CDSView"},{"attributes":{},"id":"2299","type":"HelpTool"},{"attributes":{"axis_label":"YEAR","formatter":{"id":"2366"},"ticker":{"id":"2287"}},"id":"2286","type":"LinearAxis"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_multi":null,"active_scroll":"auto","active_tap":"auto","tools":[{"id":"2294"},{"id":"2295"},{"id":"2296"},{"id":"2297"},{"id":"2298"},{"id":"2299"},{"id":"2318"}]},"id":"2301","type":"Toolbar"},{"attributes":{},"id":"2282","type":"LinearScale"},{"attributes":{"axis":{"id":"2290"},"dimension":1,"ticker":null},"id":"2293","type":"Grid"},{"attributes":{"fill_color":{"value":"yellow"},"line_color":{"value":"yellow"},"size":{"units":"screen","value":6},"x":{"field":"Year"},"y":{"field":"TOTAL_CAMERAS"}},"id":"2314","type":"Square"},{"attributes":{},"id":"2297","type":"SaveTool"},{"attributes":{"source":{"id":"2274"}},"id":"2312","type":"CDSView"},{"attributes":{},"id":"2291","type":"BasicTicker"},{"attributes":{"line_color":"red","line_width":4,"x":{"field":"Year"},"y":{"field":"TOTAL_CAMERAS"}},"id":"2309","type":"Line"},{"attributes":{},"id":"2284","type":"LinearScale"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"yellow"},"line_alpha":{"value":0.1},"line_color":{"value":"yellow"},"size":{"units":"screen","value":6},"x":{"field":"Year"},"y":{"field":"TOTAL_CAMERAS"}},"id":"2315","type":"Square"},{"attributes":{},"id":"2294","type":"PanTool"},{"attributes":{"line_alpha":0.1,"line_color":"red","line_width":4,"x":{"field":"Year"},"y":{"field":"TOTAL_CAMERAS"}},"id":"2310","type":"Line"},{"attributes":{"overlay":{"id":"2300"}},"id":"2296","type":"BoxZoomTool"},{"attributes":{"callback":null,"tooltips":[["Year","@Year"],["Number of Cameras","@TOTAL_CAMERAS"],["Number of dacoity","@TOTAL_DACOITY"],["Number of Burglary","@TOTAL_BURGLARY"],["Number of Theft","@TOTAL_THEFT"],["Against Women","@AGAINST_WOMEN"]]},"id":"2318","type":"HoverTool"},{"attributes":{"data_source":{"id":"2274"},"glyph":{"id":"2309"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"2310"},"selection_glyph":null,"view":{"id":"2312"}},"id":"2311","type":"GlyphRenderer"}],"root_ids":["2275"]},"title":"Bokeh Application","version":"2.1.1"}}
+        </script>
+        <script type="text/javascript">
+          (function() {
+            var fn = function() {
+              Bokeh.safely(function() {
+                (function(root) {
+                  function embed_document(root) {
+                    
+                  var docs_json = document.getElementById('2516').textContent;
+                  var render_items = [{"docid":"c7ebef9a-52fa-44dc-9b9f-da8c24484582","root_ids":["2275"],"roots":{"2275":"14f559ba-19df-4d53-8943-c032fb8f6459"}}];
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                
+                  }
+                  if (root.Bokeh !== undefined) {
+                    embed_document(root);
+                  } else {
+                    var attempts = 0;
+                    var timer = setInterval(function(root) {
+                      if (root.Bokeh !== undefined) {
+                        clearInterval(timer);
+                        embed_document(root);
+                      } else {
+                        attempts++;
+                        if (attempts > 100) {
+                          clearInterval(timer);
+                          console.log("Bokeh: ERROR: Unable to run BokehJS code because BokehJS library is missing");
+                        }
+                      }
+                    }, 10, root)
+                  }
+                })(window);
+              });
+            };
+            if (document.readyState != "loading") fn();
+            else document.addEventListener("DOMContentLoaded", fn);
+          })();
+        </script>
+    
+  </body>
+  
+</html>

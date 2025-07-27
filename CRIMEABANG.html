@@ -1,0 +1,85 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  
+  <head>
+    
+      <meta charset="utf-8">
+      <title>Bokeh Plot</title>
+      
+      
+        
+          
+        
+        
+          
+        <script type="text/javascript" src="https://cdn.bokeh.org/bokeh/release/bokeh-2.1.1.min.js" integrity="sha384-kLr4fYcqcSpbuI95brIH3vnnYCquzzSxHPU6XGQCIkQRGJwhg0StNbj1eegrHs12" crossorigin="anonymous"></script>
+        <script type="text/javascript">
+            Bokeh.set_log_level("info");
+        </script>
+        
+      
+      
+    
+  </head>
+  
+  
+  <body>
+    
+      
+        
+          
+          
+            
+              <div class="bk-root" id="555737ec-af10-4211-8ada-b4191b8a5751" data-root-id="2608"></div>
+            
+          
+        
+      
+      
+        <script type="application/json" id="2836">
+          {"691bd495-0651-4da8-ad82-c630493ef995":{"roots":{"references":[{"attributes":{"below":[{"id":"2619"}],"center":[{"id":"2621"},{"id":"2625"}],"left":[{"id":"2622"}],"renderers":[{"id":"2643"}],"title":{"id":"2609"},"toolbar":{"id":"2633"},"x_range":{"id":"2611"},"x_scale":{"id":"2615"},"y_range":{"id":"2613"},"y_scale":{"id":"2617"}},"id":"2608","subtype":"Figure","type":"Plot"},{"attributes":{},"id":"2688","type":"CategoricalTickFormatter"},{"attributes":{"source":{"id":"2640"}},"id":"2644","type":"CDSView"},{"attributes":{"bottom_units":"screen","fill_alpha":0.5,"fill_color":"lightgrey","left_units":"screen","level":"overlay","line_alpha":1.0,"line_color":"black","line_dash":[4,4],"line_width":2,"right_units":"screen","top_units":"screen"},"id":"2632","type":"BoxAnnotation"},{"attributes":{},"id":"2630","type":"ResetTool"},{"attributes":{},"id":"2613","type":"DataRange1d"},{"attributes":{},"id":"2631","type":"HelpTool"},{"attributes":{},"id":"2620","type":"CategoricalTicker"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"pink"},"line_alpha":{"value":0.1},"line_color":{"value":"pink"},"top":{"field":"top"},"width":{"value":0.6},"x":{"field":"x"}},"id":"2642","type":"VBar"},{"attributes":{"overlay":{"id":"2632"}},"id":"2628","type":"BoxZoomTool"},{"attributes":{"data_source":{"id":"2640"},"glyph":{"id":"2641"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"2642"},"selection_glyph":null,"view":{"id":"2644"}},"id":"2643","type":"GlyphRenderer"},{"attributes":{},"id":"2627","type":"WheelZoomTool"},{"attributes":{},"id":"2629","type":"SaveTool"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_multi":null,"active_scroll":"auto","active_tap":"auto","tools":[{"id":"2626"},{"id":"2627"},{"id":"2628"},{"id":"2629"},{"id":"2630"},{"id":"2631"}]},"id":"2633","type":"Toolbar"},{"attributes":{},"id":"2626","type":"PanTool"},{"attributes":{"text":"CRIME IN BANGLORE"},"id":"2609","type":"Title"},{"attributes":{"data":{"top":[312.8,301.5,298.6,290.0,250.5,210.6,222.0,237.2,193.3,44.9,32.08],"x":["2010","2011","2012","2013","2014","2015","2016","2017","2018","2019","2020"]},"selected":{"id":"2689"},"selection_policy":{"id":"2690"}},"id":"2640","type":"ColumnDataSource"},{"attributes":{"axis":{"id":"2619"},"ticker":null},"id":"2621","type":"Grid"},{"attributes":{},"id":"2617","type":"LinearScale"},{"attributes":{"factors":["2010","2011","2012","2013","2014","2015","2016","2017","2018","2019","2020"]},"id":"2611","type":"FactorRange"},{"attributes":{"axis":{"id":"2622"},"dimension":1,"ticker":null},"id":"2625","type":"Grid"},{"attributes":{"axis_label":"CRIME RATE","formatter":{"id":"2686"},"ticker":{"id":"2623"}},"id":"2622","type":"LinearAxis"},{"attributes":{"axis_label":"YEAR","formatter":{"id":"2688"},"ticker":{"id":"2620"}},"id":"2619","type":"CategoricalAxis"},{"attributes":{"fill_color":{"value":"pink"},"line_color":{"value":"pink"},"top":{"field":"top"},"width":{"value":0.6},"x":{"field":"x"}},"id":"2641","type":"VBar"},{"attributes":{},"id":"2623","type":"BasicTicker"},{"attributes":{},"id":"2615","type":"CategoricalScale"},{"attributes":{},"id":"2689","type":"Selection"},{"attributes":{},"id":"2690","type":"UnionRenderers"},{"attributes":{},"id":"2686","type":"BasicTickFormatter"}],"root_ids":["2608"]},"title":"Bokeh Application","version":"2.1.1"}}
+        </script>
+        <script type="text/javascript">
+          (function() {
+            var fn = function() {
+              Bokeh.safely(function() {
+                (function(root) {
+                  function embed_document(root) {
+                    
+                  var docs_json = document.getElementById('2836').textContent;
+                  var render_items = [{"docid":"691bd495-0651-4da8-ad82-c630493ef995","root_ids":["2608"],"roots":{"2608":"555737ec-af10-4211-8ada-b4191b8a5751"}}];
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                
+                  }
+                  if (root.Bokeh !== undefined) {
+                    embed_document(root);
+                  } else {
+                    var attempts = 0;
+                    var timer = setInterval(function(root) {
+                      if (root.Bokeh !== undefined) {
+                        clearInterval(timer);
+                        embed_document(root);
+                      } else {
+                        attempts++;
+                        if (attempts > 100) {
+                          clearInterval(timer);
+                          console.log("Bokeh: ERROR: Unable to run BokehJS code because BokehJS library is missing");
+                        }
+                      }
+                    }, 10, root)
+                  }
+                })(window);
+              });
+            };
+            if (document.readyState != "loading") fn();
+            else document.addEventListener("DOMContentLoaded", fn);
+          })();
+        </script>
+    
+  </body>
+  
+</html>

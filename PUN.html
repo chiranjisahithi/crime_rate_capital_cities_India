@@ -1,0 +1,85 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  
+  <head>
+    
+      <meta charset="utf-8">
+      <title>Bokeh Plot</title>
+      
+      
+        
+          
+        
+        
+          
+        <script type="text/javascript" src="https://cdn.bokeh.org/bokeh/release/bokeh-2.1.1.min.js" integrity="sha384-kLr4fYcqcSpbuI95brIH3vnnYCquzzSxHPU6XGQCIkQRGJwhg0StNbj1eegrHs12" crossorigin="anonymous"></script>
+        <script type="text/javascript">
+            Bokeh.set_log_level("info");
+        </script>
+        
+      
+      
+    
+  </head>
+  
+  
+  <body>
+    
+      
+        
+          
+          
+            
+              <div class="bk-root" id="94222c39-4914-482d-87b7-d9421dafaa9c" data-root-id="2007"></div>
+            
+          
+        
+      
+      
+        <script type="application/json" id="2227">
+          {"596808d3-46b8-4a3a-8d88-cfbdcf3f8d03":{"roots":{"references":[{"attributes":{"below":[{"id":"2018"}],"center":[{"id":"2021"},{"id":"2025"}],"left":[{"id":"2022"}],"plot_height":400,"plot_width":400,"renderers":[{"id":"2043"},{"id":"2048"}],"title":{"id":"2008"},"toolbar":{"id":"2033"},"x_range":{"id":"2010"},"x_scale":{"id":"2014"},"y_range":{"id":"2012"},"y_scale":{"id":"2016"}},"id":"2007","subtype":"Figure","type":"Plot"},{"attributes":{},"id":"2019","type":"BasicTicker"},{"attributes":{"source":{"id":"2006"}},"id":"2049","type":"CDSView"},{"attributes":{"text":"SURVEILLANCE"},"id":"2008","type":"Title"},{"attributes":{"callback":null,"tooltips":[["Year","@year"],["Number of Cameras","@Cameras"],["Number of residential robbery","@RESIDENTIAL_PREMISESRobbery"],["Number of residential Burglary","@RESIDENTIAL_PREMISESBurglary"],["Number residential of Theft","@RESIDENTIAL_PREMISESTheft"],["Highway Robbery","@HIGHWAYSRobbery"],["Highway theft","@HIGHWAYSTheft"],["Railway theft","@RAILWAYSTheft"],["Bank dacoity","@BANKSDacoity"],["Bank robbey","@BANKSRobbery"],["Bank burglary","@BANKSBurglary"],["Bank Theft","@BANKSTheft"],["Crime Index","@Crime_index"]]},"id":"2050","type":"HoverTool"},{"attributes":{},"id":"2010","type":"DataRange1d"},{"attributes":{},"id":"2014","type":"LinearScale"},{"attributes":{"axis":{"id":"2022"},"dimension":1,"ticker":null},"id":"2025","type":"Grid"},{"attributes":{},"id":"2016","type":"LinearScale"},{"attributes":{"line_alpha":0.1,"line_color":"blue","line_width":4,"x":{"field":"year"},"y":{"field":"Cameras"}},"id":"2042","type":"Line"},{"attributes":{},"id":"2031","type":"HelpTool"},{"attributes":{},"id":"2030","type":"ResetTool"},{"attributes":{"fill_color":{"value":"yellow"},"line_color":{"value":"yellow"},"size":{"units":"screen","value":6},"x":{"field":"year"},"y":{"field":"Cameras"}},"id":"2046","type":"Square"},{"attributes":{"data_source":{"id":"2006"},"glyph":{"id":"2046"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"2047"},"selection_glyph":null,"view":{"id":"2049"}},"id":"2048","type":"GlyphRenderer"},{"attributes":{"data":{"BANKSBurglary":[19,26,21,26,28,30,21,97,19,27,25],"BANKSDacoity":[0,1,1,1,1,1,0,3,2,0,0],"BANKSRobbery":[2,2,6,4,4,9,1,1,0,4,2],"BANKSTheft":[1,0,2,1,1,9,2,47,3,43,10],"Cameras":[127540,134042,135799,137600,134021,136689,137786,138823,139956,142298,145465],"Crime_index":{"__ndarray__":"mpmZmZnBfEDNzMzMzNx7QM3MzMzMbHtAMzMzMzNLekBmZmZmZt53QM3MzMzMXHBAzczMzMzsbkBmZmZmZnZkQGZmZmZmZlpAZmZmZmYmQkBcj8L1KHxAQA==","dtype":"float64","order":"little","shape":[11]},"HIGHWAYSRobbery":[71,51,48,41,1,3,6,25,22,132,155],"HIGHWAYSTheft":[88,95,171,264,32,49,40,101,121,776,81],"RAILWAYSTheft":[402,203,149,180,29,51,45,59,47,520,429],"RESIDENTIAL_PREMISESBurglary":[2072,2009,1868,1894,1048,1206,1104,1313,1454,1350,1409],"RESIDENTIAL_PREMISESRobbery":[52,55,20,35,34,36,21,7,73,81,73],"RESIDENTIAL_PREMISESTheft":[1930,2394,2163,2266,716,1245,1569,1218,1624,139,138],"Total":[4637,4836,4449,4712,1894,2639,2809,2871,3365,3072,2322],"index":[0,1,2,3,4,5,6,7,8,9,10],"year":[2010,2011,2012,2013,2014,2015,2016,2017,2018,2019,2020]},"selected":{"id":"2082"},"selection_policy":{"id":"2081"}},"id":"2006","type":"ColumnDataSource"},{"attributes":{},"id":"2078","type":"BasicTickFormatter"},{"attributes":{"data_source":{"id":"2006"},"glyph":{"id":"2041"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"2042"},"selection_glyph":null,"view":{"id":"2044"}},"id":"2043","type":"GlyphRenderer"},{"attributes":{},"id":"2076","type":"BasicTickFormatter"},{"attributes":{},"id":"2027","type":"WheelZoomTool"},{"attributes":{"axis":{"id":"2018"},"ticker":null},"id":"2021","type":"Grid"},{"attributes":{},"id":"2012","type":"DataRange1d"},{"attributes":{},"id":"2029","type":"SaveTool"},{"attributes":{"source":{"id":"2006"}},"id":"2044","type":"CDSView"},{"attributes":{},"id":"2081","type":"UnionRenderers"},{"attributes":{"bottom_units":"screen","fill_alpha":0.5,"fill_color":"lightgrey","left_units":"screen","level":"overlay","line_alpha":1.0,"line_color":"black","line_dash":[4,4],"line_width":2,"right_units":"screen","top_units":"screen"},"id":"2032","type":"BoxAnnotation"},{"attributes":{"axis_label":"YEAR","formatter":{"id":"2078"},"ticker":{"id":"2019"}},"id":"2018","type":"LinearAxis"},{"attributes":{},"id":"2082","type":"Selection"},{"attributes":{"overlay":{"id":"2032"}},"id":"2028","type":"BoxZoomTool"},{"attributes":{"line_color":"blue","line_width":4,"x":{"field":"year"},"y":{"field":"Cameras"}},"id":"2041","type":"Line"},{"attributes":{"axis_label":"Number of Cameras","formatter":{"id":"2076"},"ticker":{"id":"2023"}},"id":"2022","type":"LinearAxis"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"yellow"},"line_alpha":{"value":0.1},"line_color":{"value":"yellow"},"size":{"units":"screen","value":6},"x":{"field":"year"},"y":{"field":"Cameras"}},"id":"2047","type":"Square"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_multi":null,"active_scroll":"auto","active_tap":"auto","tools":[{"id":"2026"},{"id":"2027"},{"id":"2028"},{"id":"2029"},{"id":"2030"},{"id":"2031"},{"id":"2050"}]},"id":"2033","type":"Toolbar"},{"attributes":{},"id":"2023","type":"BasicTicker"},{"attributes":{},"id":"2026","type":"PanTool"}],"root_ids":["2007"]},"title":"Bokeh Application","version":"2.1.1"}}
+        </script>
+        <script type="text/javascript">
+          (function() {
+            var fn = function() {
+              Bokeh.safely(function() {
+                (function(root) {
+                  function embed_document(root) {
+                    
+                  var docs_json = document.getElementById('2227').textContent;
+                  var render_items = [{"docid":"596808d3-46b8-4a3a-8d88-cfbdcf3f8d03","root_ids":["2007"],"roots":{"2007":"94222c39-4914-482d-87b7-d9421dafaa9c"}}];
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                
+                  }
+                  if (root.Bokeh !== undefined) {
+                    embed_document(root);
+                  } else {
+                    var attempts = 0;
+                    var timer = setInterval(function(root) {
+                      if (root.Bokeh !== undefined) {
+                        clearInterval(timer);
+                        embed_document(root);
+                      } else {
+                        attempts++;
+                        if (attempts > 100) {
+                          clearInterval(timer);
+                          console.log("Bokeh: ERROR: Unable to run BokehJS code because BokehJS library is missing");
+                        }
+                      }
+                    }, 10, root)
+                  }
+                })(window);
+              });
+            };
+            if (document.readyState != "loading") fn();
+            else document.addEventListener("DOMContentLoaded", fn);
+          })();
+        </script>
+    
+  </body>
+  
+</html>
